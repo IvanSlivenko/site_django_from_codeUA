@@ -1,0 +1,85 @@
+1
+створюємо віртуальне середовище
+python -m venv venv
+
+2
+Активуємо віртуальне середовище
+venv\Scripts\activate
+
+3
+інсталюємо джанго
+pip install django
+
+4
+створюємо проект джанго
+django-admin startproject taskmanager
+
+Pagesonline переіменовуємо на config
+
+в manage.py : Pagesonline.settings  переіменовуємо на config.settings
+
+5
+Створюємо папку templates
+
+6
+редагуємо settings
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'],  !!!!!!!!!!!!!!
+}
+]
+
+7
+Запуск сервера django
+Python manage.py runserver
+
+8
+Створюємо додаток в проекті
+
+Python manage.py startapp library
+
+9
+
+pip install Pillow
+
+10
+
+
+
+oновлення  шаблонів таблиць бази данних
+python manage.py makemigrations
+
+застосування змін до бази данних
+python manage.py migrate
+
+11
+
+admin.py
+register
+
+12
+python manage.py createsuperuser
+
+user: admin
+Password: admin
+
+email: umanproger@ukr.net
+
+13
+create file json -> .\initial_data.json
+
+14
+python manage.py loaddata .\initial_data.json
+
+
+
+
+
+
+
+-------------------------------------------
+https://youtu.be/2d-V7qZ3eTk
+
+
+1: 01 : 53

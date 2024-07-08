@@ -1,0 +1,48 @@
+[
+    {
+        "model":"library.author",
+        "pk":1,
+        "fields":{
+            "first_name": "Іван",
+            "last_name":"Франко",
+            "email":"franko@example.com"
+        }
+    },
+    {
+        "model":"library.author",
+        "pk":2,
+        "fields":{
+            "first_name": "Леся",
+            "last_name":"Українка",
+            "email":"ukrainka@example.com"
+        }
+    },
+    {
+        "model":"library.book",
+        "pk":1,
+        "fields":{
+            "title":"Каменярі",
+            "author":1,
+            "description":"Поема про камнярів",
+            "rental_fee":"14.99",
+            "late_fee_multiplier":"1.50",
+            "image":"1.jpg",
+            "pages":300,
+            "language":"українська"
+        }
+    },
+    {
+        "model":"library.book",
+        "pk":2,
+        "fields":{
+            "title":"Лісова пісня",
+            "author":2,
+            "description":"Лірична поема про красу природи та життя лісових мешканців",
+            "rental_fee":"12.99",
+            "late_fee_multiplier":"1.50",
+            "image":"2.jpg",
+            "pages":200,
+            "language":"українська"
+        }
+    }  
+]
